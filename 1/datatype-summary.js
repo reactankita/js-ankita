@@ -95,3 +95,11 @@ console.log(userOne) // changed
 console.log(userTwo) 
 
 
+
+
+// Conclusion Notes : datatypes are based on memory allocation
+
+// Primitive datatypes -> call by value (string, number, boolean, null,undefined, bigInt, symbol) -> Stack Memory
+// Referance / Non Primitive datatypes -> call by reference (array, object, function) -> Heap Memory
+
+// JavaScript is a dynamically typed language. This means that you don't need to specify the datatype of a variable when you declare it
