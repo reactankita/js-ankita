@@ -31,7 +31,7 @@ const bigNumber = 3590819183273565783n // to store use BigInt
 // Array []
 const heros = ["shaktiman", "naagraj", "doga"];
 
-// Objects {}
+// Objects {} 
 let myObj = {
     name : "Ankita",
     age : 20,
