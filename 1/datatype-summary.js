@@ -53,7 +53,45 @@ console.log(typeof scoreValue)
 console.log(typeof myFunction) // actual : function object
 
 
+// https://262.ecma-international.org/5.1/#sec-11.4.3
+
 
 
 // note : js is a dynamically typed language. This means that the variable types are determined at runtime, and you do not need to explicitly declare the type of variable before using it. Ypu can assign different types of values to a variable during its life time
 // language is not defined in JS
+
+
+
+
+
+
+
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive) , heap (Non-Primitive)
+
+
+
+// Stack
+let Youtubename = "codeaurchai"
+let anothername = Youtubename // copy is given not the original data of "Youtubename" variable, hence if updated using another variable the original data won't change
+anothername = "codeaurchaiNewVersion" // copy updated
+console.log(Youtubename) // no change
+console.log(anothername)
+
+
+// Heap
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne // both userOne and userTwo (in stack) points to the same original data (userOne) stored in heap
+userTwo.email = "ankita@gmail.com" // original value updated
+console.log(userOne) // changed
+console.log(userTwo) 
+
+
